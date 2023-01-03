@@ -1,5 +1,10 @@
 package com.explnatory.learnspringframework.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+@Qualifier("MarioQualifier")
 public class MarioGame implements GamingConsole {
     public void up(){
         System.out.println("Jump");
